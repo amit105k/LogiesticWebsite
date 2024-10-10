@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search Wikipedia and Google..." />
+        <div id="results"></div>
+    </div>
+    <script>const searchInput = document.getElementById('search-input');
+        const resultsDiv = document.getElementById('results');
+        
+        searchInput.addEventListener('input', async () => {
+            const query = searchInput.value;
+        
+            if (query.length < 2) {
+                resultsDiv.innerHTML = '';
+                return;
+            }
+        
+            // Fetch Wikipedia results
+            const wikiResponse = await fetch(`https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${query}&format=json&origin=*`);
+            const wikiData = await wikiResponse.json();
+        
+            // Clear previous results
+            resultsDiv.innerHTML = '';
+        
+            // Display Wikipedia results
+            wikiData.query.search.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'result-item';
+                div.innerHTML = item.title;
+                div.onclick = () => window.open(`https://en.wikipedia.org/wiki/${item.title}`, '_blank');
+                resultsDiv.appendChild(div);
+            });
+        
+            // Fetch Google results (using a hypothetical API)
+            const googleResponse = await fetch(`https://api.example.com/google-search?q=${query}`);
+            const googleData = await googleResponse.json();
+        
+            // Display Google results
+            googleData.results.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'result-item';
+                div.innerHTML = item.title;
+                div.onclick = () => window.open(item.link, '_blank');
+                resultsDiv.appendChild(div);
+            });
+        });
+        </script>
+</body>
+</html>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.search-container {
+    width: 300px;
+    position: relative;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1;
+}
+
+.result-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.result-item:hover {
+    background: #f0f0f0;
+}
+.result-item i{
+    font-size: 19px;
+    color: aqua;
+    background-color: red;
+    border: 2px solid pink;
+    right: 3rch;
+    font-weight: inherit;
+    border-style: ;
+}
+
+</style>

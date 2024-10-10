@@ -1,0 +1,636 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+.logo{
+  font-size: 37px;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar {
+  /* position: fixed; */
+  width: 100%;
+  background-color:hsl(202, 75%, 47%);
+  color: rgb(13, 12, 12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  transition: top 0.3s;
+  height: 80px;
+  /* font-size:1.6rem; */
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+  padding: 15px
+}
+
+.nav-links a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  /* text-decoration: underline; */
+  color: hsl(32, 100%, 50%);
+}
+
+
+
+
+.nav{
+  background-color:hsl(202, 75%, 47%) ;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav h1{
+  float: left;
+  /* position:relative; */
+  color: white;
+  /* margin-left: -267px; */
+}
+.sec{
+  display: flex;
+  /* flex-direction: row; */
+  /* flex: 1; */
+  margin-left: 5%;
+}
+.sec section{
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  
+  /* border:1px solid red; */
+  text-align: center;
+  
+}
+.sec section a{
+  height: 100%;
+  width: 100%;
+  /* background-color: teal; */
+  display: block;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-decoration: none;
+  font-size: 22px;
+  color: rgb(252, 251, 251);
+}
+.sec section a:hover{
+  color: hsl(32, 100%, 50%);
+}
+.nav img{
+  float: right;
+  height: 100%;
+  display: flex;
+  margin-left: 87px;
+}
+
+
+/* .overlay.active {
+    visibility: visible;
+    opacity: 0 !important;
+  } */
+  
+  .imgs{
+    background: url("https://www.delhivery.com/_nuxt/img/expressParcel.2ad6cd7.webp");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    /* background-position:100% center; */
+    /* background-position: contain; */
+    background-size: cover; 
+    /* width: 100%; */
+    height: 500px;
+    border: 20px solid orange;
+    /* margin-top: 20px; */
+  }
+  .imgstext{
+    width: 48%;
+    margin-top: 150px;
+    margin-left: 20px;
+    color: white !important;
+  }
+  .imgstext button{
+    background-color: white;
+    padding: 15px;
+    width: 300px;
+    border-radius: 5px;
+    margin-top: 50px;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+  .imgstext button:hover{
+    background-color: orange;
+  }
+  .imgstext nav{
+    color: hsl(32, 100%, 50%);
+    display: inline-block;
+    font-size: 2.8rem;
+  }
+  .imgstext h2{
+    margin-top: 15px;
+    margin-bottom: 16px;
+    font-size: 19px !important;
+  }
+  .imgstext h1{
+    font-size: 26px;
+  }
+  .red{
+    /* background-color: red; */
+    /* height: 50px;
+    width: 50px; */
+    position: absolute;
+    margin-top: 50px;
+    position: absolute;
+    bottom: 40px;
+    /* right: 0; */
+    animation: move 2s ease-in-out infinite alternate; 
+    text-align: center;
+    justify-content: center;
+  }
+  .red i{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 22px;
+  }
+
+
+  @keyframes move {
+    0% { transform: translateY(35px);background-color:hsl(32, 100%, 50%)};
+    50% { background-color: };
+    80% { background-color:};
+    100% { transform: translateY(100px);background-color: rgb(23, 23, 22); };
+  }
+
+
+  /* ..............................second session are start here.......................................... */
+#second{
+    display: flex;
+    height: 500px;
+    background-color: hsl(203, 100%, 97%);
+}
+  .sec1{
+    height: 400px;
+    width: 100%;
+    /* background-color: red; */
+    margin-left: 72px;
+    padding-top: 4%;
+  }
+.sec1 h1{
+    font-size: 28px;
+}
+.sec1 :nth-child(1){
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sec1 :nth-child(2){
+    color: rgb(61, 56, 56);
+}
+  .hr{
+    width: 80px;
+    height: 5px;
+    background-color: #ff3131;
+    margin: 3px;
+  }
+  .sec1 :nth-child(4){
+    margin-top: 15px;
+    width: 70%;
+    text-align: left;
+    /* text-align: justify; */
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  }
+  .sec1 :nth-child(5){
+    margin-top: 25px;
+    width: 70%;
+    text-align: left;
+    /* text-align: justify; */
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  }
+  .sec1,.sec2{
+    /* border: 1px solid black; */
+    flex: 1;
+    color: rgb(58, 53, 53);
+  }
+  .sec2{
+    background-color: black;
+    /* background: url("https://www.delhivery.com/_nuxt/img/largest.f9cc278.png"); */
+    background-size: cover;
+  }
+  .sec2{
+    display: flex;
+    justify-content: center;
+  }
+  .sec2 img{
+    position: absolute;
+  margin-top: 101px;
+  margin-left: -164px;
+}
+
+/* ...................four.............................................. */
+#third{
+    background-color: black;
+    height: 450px;
+    
+    display: flex;
+    justify-content: center;
+}
+.third{
+    /* background-color: rgb(217, 113, 113); */
+    width: 90%;
+    color: white;
+    margin-top: 57px;
+    margin-left: 27px;
+}
+.third :first-child::first-letter{
+    /* font-size: large; */
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.third h1{
+    font-size: 27px;
+    
+}
+.secthird{
+    display: flex;
+    /* background-color: blue; */
+    /* height: 80%; */
+    margin-top: 50px;
+    align-items: center;
+    
+}
+.secthird section{
+    flex: 1;
+    /* border: 2px solid pink; */
+    /* text-align: center; */
+    
+}
+#imagee h1{
+    font-size: 49px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Archivo",sans-serif;
+    margin-top: 25px;
+}
+#imagee{
+  flex: 1;
+  width: 33%;
+}
+#imagee p{
+    font-size: 23px;
+    margin-top: 13px;
+    color: white;
+}
+
+/* .......................fifth................................. */
+
+#fifth{
+    background-color: hsl(203, 100%, 97%);
+    height: 580px;
+    display: flex;
+    justify-content: center;
+}
+.fifth{
+    /* background-color: rgb(217, 113, 113); */
+    width: 90%;
+    color: #e83434;
+    margin-top: 50px;
+}
+.fifth :first-child::first-letter{
+    /* font-size: large; */
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.fifth h1{
+    font-size: 27px;
+    color: black;
+}
+.secfifth{
+    display: flex;
+    /* background-color: blue; */
+    /* height: 80%; */
+    margin-top: 50px;
+    
+}
+.fifth section{
+    flex: 1;
+    /* border: 2px solid pink; */
+    /* text-align: center; */
+    
+}
+#imageee h1{
+    font-size: 20px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Archivo",sans-serif;
+    margin-top: 55px;
+    line-height: 1.5px;
+    text-align: center;
+}
+#imageee p{
+    font-size: 20px;
+    margin-top: 15px;
+    color: black;
+    text-align: center;
+}
+#imageee img{
+    height: 65px;
+    justify-content: center;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+#imageee i{
+    color: hsl(32, 100%, 50%);
+    font-size: 27px;
+    margin-left: 40%;
+    margin-top: 10px;
+    
+}
+.secfifth section{
+    border: 20px solid #eae9e8;
+    cursor: pointer;
+    margin-left: 2px;
+    height: 340px;
+}
+.secfifth section:hover{
+    border: 20px solid orange;
+    cursor: pointer;
+}
+#imageee:hover i{
+    color: #161515;
+    font-size: 27px;
+    margin-left: 40%;
+    margin-top: 10px;
+    /* animation: i 2s infinite 2s alternate alternate-reverse both; */
+    animation: i 2s infinite alternate linear;    
+}
+@keyframes i{
+  0%{font-size:27px ;}
+  20%{font-size:30px ;}
+  50%{font-size:32px ;}
+  70%{font-size:35px ;}
+  100%{font-size:37px ;}
+}
+
+
+
+/* .............................last .................................................... */
+#last{
+    justify-content: center;
+    display: flex;
+    background-color:hsl(203, 100%, 97%);
+    height: 250px;
+    align-items: center;
+}
+.last{
+    width: 90%;
+    /* background-color: red; */
+    
+}
+.last h6{
+    font-size: 16px;
+    margin-top: 15px;
+}
+.last p{
+    margin-top: 10px;
+    font-size: 16px;
+}
+.last :nth-child(2){
+    width: 70%;
+    display: inline-block;
+    margin-right: 80px;
+}
+.last i{
+    font-size: 28px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.last :nth-child(7):hover{
+    color:252, 204, 99;
+}
+.last :nth-child(3):hover{
+  color: #4267B2;
+}
+.last :nth-child(6):hover{
+  color: #CD201F;
+}
+.last :nth-child(5):hover{
+  color: #0072b1;
+}
+.last :nth-child(4):hover{
+  color: #1DA1F2;
+}
+/* .....................................sign up npw.................................... */
+#sign{
+    background-color: #161515;
+    height: 400px;
+    color: rgb(247, 246, 245);
+    margin: auto;
+    padding: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+#sign h1{
+    text-align: center;
+    margin: auto;
+    font-size: 33px;
+    
+    
+}
+#sign button{
+    padding: 10px;
+    width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 5%;
+}
+#sign button:hover{
+    background-color: #f97908;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    font-size: 22px;
+}
+.sign{
+    width: 100%;
+}
+
+
+/* ..........................slider are start here.............................. */
+.sbi{
+  width: 150px;
+  height: 50px;
+  display: flex;
+  background-color: lightblue;
+  position: fixed;
+  right: -103px;
+  top: 30%;
+  transition-duration: 2s;
+}
+.sbi:hover{
+  right: -4px;
+  transition-duration: 2s;
+}
+.sbi select{
+  flex: 1;
+  margin-top: 5%;
+ 
+}
+.sbi img{
+  width: 40px;
+  margin-top: 6px;
+  margin-left: 8px;
+  font-size: 30px;
+  color: blue;
+  border-radius:100% ;
+}
+.sbi :last-child{
+  flex: 3;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.sbi a{
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  margin-left: 12px;
+  cursor: pointer;
+}
+#sbi{
+  margin-top: 53px;
+}
+#sbii{
+  margin-top: 106px;
+}
+#sbiii{
+  margin-top: 159px;
+}
+
+
+/* ...............................................service are here.............................. */
+
+
+footer {
+  background-color: hsl(0, 0%, 91%);
+  color: hsl(202, 72%, 15%);
+}
+.footer{
+  display: flex;
+  padding-top: 50px;
+  color:hsl(202, 72%, 15%);
+  /* background-color: red; */
+  margin-left: 2%;
+  margin-right: 2%;
+ 
+}
+
+.al{
+  /* background-color: red; */
+  width: 40%;
+}
+.ul{    
+  /* background-color: pink; */
+  width: 60%;
+  margin-left: 30px;
+  display: flex;
+  /* justify-content: center;
+  align-items: center;     */
+}
+.ul ul li{
+  /* justify-content:space-between; */
+  line-height: 37px;
+}
+.ul ul li p{
+  line-height: 28px;
+width: 80%;
+margin-top: 20px;
+font-size: 20px;
+}
+.ul ul{
+  width: 33.3%;
+}
+.ul li p{
+  font-size: 16px;
+  max-width: max-content;
+  padding-block-end: 10px;
+  border-block-end: 3px solid hsl(32, 100%, 50%);
+  margin-block-end: 20px;
+}
+.ul ul li{
+    list-style: none;
+    cursor: pointer;
+}
+.ul ul li:hover{
+    list-style: none;
+    cursor: pointer;
+    color: rgb(127, 116, 116);
+}
+
+
+
+
+.al i{
+  background-color: hsl(202, 64%, 26%);
+  color: white;
+  font-size: 20px;
+  padding: 12px;
+  transition: 0.25s ease;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 5x;
+  margin-right: 5px;
+
+}
+
+.footer section i:is(:hover, :focus) {
+  background-color: hsl(202, 72%, 15%);
+}
+.footer section p{
+  line-height: 28px;
+  /* width: 80%; */
+  margin-top: 20px;
+}
+
+.footer section a {
+  color: hsl(202, 72%, 15%);
+  font-weight: 800;
+  font-size: 32px;
+  text-decoration:none;
+
+
+}
+footer hr{
+  margin-top: 10px;
+}
+.p2024{
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 15px;
+}
